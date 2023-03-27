@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../Header/Header.scss";
+import "../Header/header.scss";
 import { MdFoodBank } from "react-icons/md";
 import { IoMdMenu } from "react-icons/io";
 import { useSidebarContext } from "../../context/sidebarContext";

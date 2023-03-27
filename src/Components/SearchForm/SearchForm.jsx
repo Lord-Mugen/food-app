@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../Header/Header.scss";
+import "../Header/header.scss";
 import { BsSearch } from "react-icons/bs";
 import { useMealContext } from "../../context/mealContext";
 import { useNavigate } from "react-router-dom";
