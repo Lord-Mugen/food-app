@@ -9,4 +9,4 @@
 - npm
 
 ## Instalation
-To install this project locally, use the following command: * npm install *.
+To install this project locally, use the following command: **npm install**.
