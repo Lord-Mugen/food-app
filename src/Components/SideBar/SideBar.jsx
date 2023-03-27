@@ -1,4 +1,3 @@
-import React from "react";
 import { useSideBarContext } from "../../context/sideBarContext";
 import { ImCancelCircle } from "react-icons/im";
 import "./sideBar.scss";
