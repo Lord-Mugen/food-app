@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import "../Header/header.scss";
 import { MdFoodBank } from "react-icons/md";
 import { IoMdMenu } from "react-icons/io";
-import { useSidebarContext } from "../../context/sidebarContext";
+import { useSideBarContext } from "../../context/sideBarContext";
 
 const Navbar = () => {
-  const { openSidebar } = useSidebarContext();
+  const { openSidebar } = useSideBarContext();
   const [scrolled, setScrolled] = useState(false);
 
   const handleScroll = () => {
