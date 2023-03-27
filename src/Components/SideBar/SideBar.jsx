@@ -1,20 +1,20 @@
 import React from "react";
 import { useSideBarContext } from "../../context/sideBarContext";
 import { ImCancelCircle } from "react-icons/im";
-import "./Sidebar.scss";
+import "./SideBar.scss";
 import { Link } from "react-router-dom";
 import { useMealContext } from "../../context/mealContext";
 
-const Sidebar = () => {
-  const { isSidebarOpen, closeSidebar } = useSideBarContext();
+const SideBar = () => {
+  const { isSideBarOpen, closeSideBar } = useSideBarContext();
   const { categories } = useMealContext();
 
   return (
-    <nav className={`sidebar ${isSidebarOpen ? "sidebar-visible" : ""}`}>
+    <nav className={`sideBar ${isSideBarOpen ? "sideBar-visible" : ""}`}>
       <button
         type="button"
         className="navbar-hide-btn"
-        onClick={() => closeSidebar()}
+        onClick={() => closeSideBar()}
       >
         <ImCancelCircle size={24} />
       </button>
@@ -26,7 +26,7 @@ const Sidebar = () => {
               <Link
                 to={`/meal/category/${category.strCategory}`}
                 className="side-link ls-1 fs-13"
-                onClick={() => closeSidebar()}
+                onClick={() => closeSideBar()}
               >
                 {category.strCategory}
               </Link>
@@ -38,4 +38,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default SideBar;
